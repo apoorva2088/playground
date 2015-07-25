@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Customer Form</title>
+</head>
+<body>
+	<P align="center">
+		<FONT size="6" color="#008040" face="Verdana"> Welcome to BuyForLess </FONT>
+	</P>
+	<hr />
+	<h4 align="center">
+		<FONT size="3" face="verdana"> Please Select the following items and click Buy to purchase </FONT>
+	</h4>
+	<form action="/myBillingWeb/OrderProcessingServlet" method="post">
+		<table>
+			<tr>
+				<td align="center">Book Name</td>
+				<td align="center">Distributer</td>
+				<td align="center">Price</td>
+				<td align="center">Quantity</td>
+			</tr>
+			<tr>
+				<td align="center">Advanced J2EE</td>
+				<td align="center">Hall Publications</td>
+				<td align="center">$10.99</td>
+				<td align="center">
+				<SELECT name="j2eeQty">
+						<OPTION value="0">0</OPTION>
+						<OPTION value="0">1</OPTION>
+						<OPTION value="0">2</OPTION>
+						<OPTION value="0">3</OPTION>
+				</SELECT></td>
+			</tr>
+			<tr>
+				<td align="center">Perl Scripting</td>
+				<td align="center">Wrox Publications</td>
+				<td align="center">$9.99</td>
+				<td align="center">
+				<SELECT name="perlQty">
+						<OPTION value="0">0</OPTION>
+						<OPTION value="0">1</OPTION>
+						<OPTION value="0">2</OPTION>
+						<OPTION value="0">3</OPTION>
+				</SELECT></td>
+			</tr>
+			<tr>
+				<td align="center">Red Roses</td>
+				<td align="center">CoolFlowers.com</td>
+				<td align="center">$1.99</td>
+				<td align="center">
+				<SELECT name="flowerQty">
+						<OPTION value="0">0</OPTION>
+						<OPTION value="0">1</OPTION>
+						<OPTION value="0">2</OPTION>
+						<OPTION value="0">3</OPTION>
+				</SELECT></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td align="center"><input type="submit" value="Checkout"
+					size="20" /></td>
+			</tr>
+		</table>
+	</form>
+	<br />
+	<i>Copyright 2001 BuyForLess.com</i>
+</body>
+</html>
