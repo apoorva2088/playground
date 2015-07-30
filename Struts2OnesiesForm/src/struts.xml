@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="actions" extends="struts-default">
+
+		<action name="loginaction" class="actions.LoginAction" method="execute">
+			<result name="success">/jsps/OnesiesForm.jsp</result>
+			<result name="error">/jsps/error.jsp</result>
+		</action>
+		<action name="SummaryPage" class="actions.OnesiesBean" method="execute">
+			<result name="success">/jsps/SummaryPage.jsp</result>
+		
+	 </action>
+   </package>
+
+</struts>
